@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  font-family: "Open Sans", sans-serif;
+
+  --color-pink-primary: 255, 26, 217; /* #ff1ad9 */
+  --color-pink-light: 250, 132, 228; /* #fa84e4 */
+  --color-blue-primary: 0, 114, 178; /* #0072b2 */
+  --color-blue-light: 104, 167, 213; /* #68a7d5 */
+  --color-blue-dark: 15, 114, 171; /* #0f72ab */
+  
+  /* Tons de cinza */
+  --color-gray-100: 31, 37, 35; /* #1f2523 */
+  --color-gray-200: 77, 92, 87; /* #4d5c57 */
+  --color-gray-300: 205, 213, 210; /* #cdd5d2 */
+  --color-gray-400: 228, 236, 233; /* #e4ece9 */
+  --color-gray-500: 249, 251, 250; /* #f9fbfa */
+
+}
