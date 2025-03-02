@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
 export const Banner = styled.section`
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/praia.jpg');
+  background-image: url('/public/praia.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

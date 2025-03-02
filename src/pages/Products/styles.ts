@@ -8,7 +8,7 @@ export const ProductsGrid = styled.div`
   padding: 1.5rem;
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/praia2.jpg');
+  background-image: url('/public/praia2.jpg');
   background-size: cover;
   background-position: center;
 `;
@@ -51,6 +51,7 @@ export const ProductPrice = styled.p`
   color: rgb(255, 26, 217);
   margin-top: 0.5rem;
   text-align: center;
+  text-shadow: 0 0 1rem #ff1ad9, 0 0 1rem #0072b2;
 `;
 
 export const ColorsContainer = styled.div`
@@ -80,7 +81,7 @@ export const ModalBackdrop = styled.div`
 `;
 
 export const ModalContainer = styled.div`
-  background-color: #efe1ec;
+  background-color: #fcedea;
   border-radius: 10px;
   width: 100%;
   max-width: 700px;
@@ -159,11 +160,15 @@ export const SizeButton = styled.button`
   cursor: pointer;
   &:hover {
     border-color: rgb(0, 114, 178);
+    background: rgb(0, 114, 178);
+    color: white;
+    box-shadow: 0 0 5px rgb(255, 26, 217), 0 0 5px rgb(255, 26, 217);
   }
   &.selected {
     background: rgb(0, 114, 178);
     color: white;
     border-color: rgb(0, 114, 178);
+    box-shadow: 0 0 5px rgb(255, 26, 217), 0 0 5px rgb(255, 26, 217);
   }
 `;
 

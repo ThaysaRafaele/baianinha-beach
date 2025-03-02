@@ -12,11 +12,12 @@ const Products = () => {
   }, []);
   
   return (
+    <>
     <ProductsGrid>
         {productsList.map((product) => (
             <ProductCard key={product.id} product={product} />
         ))}
-    </ProductsGrid>
+    </ProductsGrid></>
   );
 };
 
