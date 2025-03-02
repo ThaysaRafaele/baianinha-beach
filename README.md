@@ -1,6 +1,8 @@
 # **Baianinha Beach - Carrinho de Compras**
 
-Este é o projeto de e-commerce **Baianinha Beach**, desenvolvido para vender biquínis e acessórios de praia.
+Este é o projeto de e-commerce **Baianinha Beach**, desenvolvido para vender biquínis e acessórios de praia. <br>
+O projeto está bem simples pois foi uma solução rápida para minha irmâ poder iniciar as vendas em sua loja. <br>
+Disponível em: https://baianinha-beach-moda.vercel.app/
 
 ## **Tecnologias Utilizadas**
 
