@@ -4,7 +4,7 @@ const products: Product[] = [
   {
     id: 1,
     name: 'Biquíni Melão',
-    image: '/public/Modelos/biquini melão.jpg',
+    image: '/src/assets/Modelos/biquini melão.jpg',
     price: 69.99,
     description: 'Biquíni Melão disponível do P ao GG.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     id: 2,
     name: 'Biquíni Fita Cenourinha',
-    image: '/public/Modelos/biquini fita cenourinha.jpg',
+    image: '/src/assets/Modelos/biquini fita cenourinha.jpg',
     price: 69.99,
     description: 'Biquíni Fita Cenourinha disponível do P ao GG.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -30,7 +30,7 @@ const products: Product[] = [
   {
     id: 3,
     name: 'Biquíni Amarração Colorido',
-    image: '/public/Modelos/biquini amarração.jpg',
+    image: '/src/assets/Modelos/biquini amarração.jpg',
     price: 79.99,
     description: 'Biquíni Amarração Colorido.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -43,7 +43,7 @@ const products: Product[] = [
   {
     id: 4,
     name: 'Biquíni Alcinha',
-    image: '/public/Modelos/biquini alcinha .jpg',
+    image: '/src/assets/Modelos/biquini alcinha .jpg',
     price: 79.99,
     description: 'Biquíni Alcinha disponível nas cores Verde, Vinho e Rosa.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -56,7 +56,7 @@ const products: Product[] = [
   {
     id: 5,
     name: 'Biquíni Fita Neon',
-    image: '/public/Modelos/biquini fita neon.jpg',
+    image: '/src/assets/Modelos/biquini fita neon.jpg',
     price: 69.99,
     description: 'Biquíni Fita Neon disponível no tamanho M.',
     sizes: ['M'],
@@ -69,7 +69,7 @@ const products: Product[] = [
   {
     id: 6,
     name: 'Biquíni Cortininha',
-    image: '/public/Modelos/biquini cortininha.jpg',
+    image: '/src/assets/Modelos/biquini cortininha.jpg',
     price: 69.99,
     description: 'Biquíni Cortininha disponível do P ao G.',
     sizes: ['P', 'M', 'G'],
@@ -82,7 +82,7 @@ const products: Product[] = [
   {
     id: 7,
     name: 'Biquíni Fita Premium',
-    image: '/public/Modelos/biquini fita premium.jpg',
+    image: '/src/assets/Modelos/biquini fita premium.jpg',
     price: 79.99,
     description: 'Biquíni Fita Premium disponível do P ao GG.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -95,7 +95,7 @@ const products: Product[] = [
   {
     id: 8,
     name: 'Biquíni Triângulo',
-    image: '/public/Modelos/Biquini triangulo.jpg',
+    image: '/src/assets/Modelos/Biquini triangulo.jpg',
     price: 79.99,
     description: 'Biquíni Triângulo disponível em tamanho único',
     sizes: ['Tam. Único'],
@@ -108,7 +108,7 @@ const products: Product[] = [
   {
     id: 9,
     name: 'Maiô Baianinha',
-    image: '/public/Modelos/maiô.jpg',
+    image: '/src/assets/Modelos/maiô.jpg',
     price: 99.99,
     description: 'Maiôs disponíeis a partir de R$ 99,99. Confira os modelos.',
     sizes: ['P', 'M', 'G', 'GG'],
@@ -121,7 +121,7 @@ const products: Product[] = [
   {
     id: 10,
     name: 'Biquíni Gloss Premium',
-    image: '/public/Modelos/biquini gloss premium.jpg',
+    image: '/src/assets/Modelos/biquini gloss premium.jpg',
     price: 99.99,
     description: 'Biquíni Gloss Premium disponível em tamanho único.',
     sizes: ['Tam. Único'],
@@ -134,7 +134,7 @@ const products: Product[] = [
   {
     id: 11,
     name: 'Biquíni Fita Suplex',
-    image: '/public/Modelos/Biquíni fita suplex.jpg',
+    image: '/src/assets/Modelos/Biquíni fita suplex.jpg',
     price: 69.99,
     description: 'Biquíni Fita Suplex disponível do M ao G.',
     sizes: ['M', 'G'],
@@ -147,7 +147,7 @@ const products: Product[] = [
   {
     id: 12,
     name: 'Calça Tricô',
-    image: '/public/Modelos/Calça Tricô.jpg',
+    image: '/src/assets/Modelos/Calça Tricô.jpg',
     price: 79.99,
     description: 'Calça Tricô disponível em tamanho único.',
     sizes: ['Tam. Único'],
@@ -158,7 +158,7 @@ const products: Product[] = [
   {
     id: 13,
     name: 'Short Tricô',
-    image: '/public/Modelos/Short Tricô.jpg',
+    image: '/src/assets/Modelos/Short Tricô.jpg',
     price: 49.99,
     description: 'Short Tricô disponível em tamanho único.',
     sizes: ['Tam. Único'],

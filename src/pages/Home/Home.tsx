@@ -7,7 +7,7 @@ const Home = () => {
       <Banner>
         <Overlay>
           <TitleContainer>
-            <Logo src="/Baianinha.png" alt="Logo Baianinha Beach" />
+            <Logo src="/src/assets/Baianinha.png" alt="Logo Baianinha Beach" />
             <Title />
           </TitleContainer>
           <Subtitle>Estilo e conforto para seus dias de sol</Subtitle>
