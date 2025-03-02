@@ -29,7 +29,13 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
   const addToCart = (item: CartItem) => {
     setCart((prevCart) => {
-      const existingItemIndex = prevCart.findIndex((cartItem) => cartItem.id === item.id);
+      const existingItemIndex = prevCart.findIndex(
+        (cartItem) =>
+          cartItem.id === item.id &&
+          cartItem.selectedSize === item.selectedSize &&
+          cartItem.selectedColor?.value === item.selectedColor?.value
+      );
+  
       if (existingItemIndex >= 0) {
         const updatedCart = [...prevCart];
         updatedCart[existingItemIndex].quantity += item.quantity;
@@ -39,7 +45,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
       }
     });
   };
-
+  
   const updateQuantity = (index: number, quantity: number) => {
     setCart((prevCart) => {
       const updatedCart = [...prevCart];

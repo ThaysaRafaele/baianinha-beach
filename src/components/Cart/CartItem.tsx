@@ -1,7 +1,13 @@
 import { CartItem as CartItemType } from "../../pages/Products/types";
 import { useCart } from "../../hooks/useCart";
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
-import { CartItemContainer, QuantityContainer, QuantityInput, RemoveButton } from "./styles";
+import {
+  CartItemContainer,
+  QuantityContainer,
+  QuantityInput,
+  RemoveButton,
+} from "./styles";
+import { ProductPrice } from "../../pages/Products/styles";
 
 interface CartItemProps {
   item: CartItemType;
@@ -30,7 +36,25 @@ const CartItem = ({ item, index }: CartItemProps) => {
       <img src={item.image} alt={item.name} className="cart-item-image" />
       <div className="cart-item-details">
         <h3>{item.name}</h3>
-        <p>R$ {item.price.toFixed(2)}</p>
+        <ProductPrice>R$ {item.price.toFixed(2)}</ProductPrice>
+        <p><strong>Tamanho:</strong> {item.selectedSize}</p>
+        {item.selectedColor && (
+          <p>
+            <strong>Cor:</strong> {item.selectedColor.name}{" "}
+            <span
+              style={{
+                display: "inline-block",
+                width: "16px",
+                height: "16px",
+                backgroundColor: item.selectedColor.hex,
+                borderRadius: "50%",
+                marginLeft: "5px",
+                border: "1px solid #ccc",
+              }}
+            />
+          </p>
+        )}
+
         <QuantityContainer>
           <button onClick={handleDecrease}>
             <FaMinus />
@@ -44,7 +68,9 @@ const CartItem = ({ item, index }: CartItemProps) => {
           </RemoveButton>
         </QuantityContainer>
       </div>
-      <p className="total-price">Subtotal: R$ {(item.price * item.quantity).toFixed(2)}</p>
+      <ProductPrice>
+        Subtotal: R$ {(item.price * item.quantity).toFixed(2)}
+      </ProductPrice>
     </CartItemContainer>
   );
 };

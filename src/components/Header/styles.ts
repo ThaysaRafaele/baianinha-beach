@@ -52,7 +52,7 @@ export const container = css`
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.25rem;
 `;
 
 export const logo = css`
@@ -131,20 +131,20 @@ export const cartContainer = css`
 
 export const cartCount = css`
   position: absolute;
-  top: -5px;
-  right: -10px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 5px;
-  font-size: 12px;
+    top: -10px;
+    right: -15px;
+    background-color: #ff1ad9;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
 `;
 
 export const cartLink = css`
   display: flex;
   align-items: center;
   position: relative;
-  color: #1f2523;
+  color: #0072b2;
   text-decoration: none;
   transition: color 0.3s ease;
   

@@ -15,8 +15,6 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    console.log('carrinho: ', cart.length)
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -26,9 +24,9 @@ const Header = () => {
 
   const navLinks = [
     { name: "Início", path: "/" },
-    { name: "Sobre", path: "/sobre" },
+    { name: "Sobre", path: "/" },
     { name: "Produtos", path: "/produtos" },
-    { name: "Contato", path: "/contato" },
+    { name: "Contato", path: "/" },
   ];
 
   return (
