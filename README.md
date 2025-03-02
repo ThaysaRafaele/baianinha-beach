@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# **Baianinha Beach - Carrinho de Compras**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto de e-commerce **Baianinha Beach**, desenvolvido para vender biquínis e acessórios de praia.
 
-Currently, two official plugins are available:
+## **Tecnologias Utilizadas**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Para a criação da interface de usuário (UI).
+- **Styled Components**: Para estilizar os componentes de forma modular.
+- **React Icons**: Para ícones de interação, como o ícone de lixeira e botões de incremento e decremento.
+- **Context API**: Para gerenciar o estado global do carrinho e compartilhar dados entre os componentes.
+- **LocalStorage**: Para persistir os itens do carrinho mesmo após recarregar a página.
+- **Hooks do React**: Para gerenciar o estado e interações do carrinho.
 
-## Expanding the ESLint configuration
+## **Funcionalidades**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Adicionar ao Carrinho**: Os usuários podem adicionar produtos ao carrinho de compras, incluindo detalhes como tamanho, cor e quantidade.
+- **Alterar Quantidade**: Os usuários podem aumentar ou diminuir a quantidade de um item no carrinho.
+- **Remover Itens**: Os usuários podem remover itens do carrinho a qualquer momento.
+- **Resumo da Compra**: Exibe o resumo do carrinho com o preço total e os itens selecionados.
+- **Formas de Pagamento**: Os usuários podem escolher entre as formas de pagamento disponíveis (Crédito, Débito, Pix) antes de finalizar a compra.
+- **Finalizar Compra via WhatsApp**: O carrinho gera um link com todos os itens do carrinho e a forma de pagamento escolhida, permitindo que o usuário finalize a compra diretamente via WhatsApp.
+- **Carrinho Vazio**: Exibe uma mensagem amigável quando o carrinho está vazio, incentivando o usuário a continuar comprando.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## **Instruções de Instalação**
+
+1. Clone o repositório para sua máquina local:
+
+   ```bash
+   git clone https://github.com/seu-usuario/baianinha-beach.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd baianinha-beach
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm start
+   ```
+
+5. Abra o navegador e acesse o endereço `http://localhost:3000` para visualizar o projeto.
+
+## **Estrutura do Projeto**
+
+```
+/src
+  /components
+    /CartItem           # Componente para exibir cada item do carrinho
+    /CartSummary        # Componente para exibir o resumo da compra
+    /Cart               # Componente principal do carrinho
+  /hooks
+    /useCart            # Hook personalizado para gerenciar o carrinho
+  /pages
+    /Products           # Página de listagem de produtos
+  /styles               # Estilos globais e componentes estilizados
+  /utils                # Funções utilitárias para manipulação de dados
+  App.tsx               # Componente principal do app
+  index.tsx             # Ponto de entrada da aplicação
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## **Como Contribuir**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua feature (`git checkout -b minha-feature`).
+3. Faça as modificações desejadas.
+4. Envie um pull request para o branch principal.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## **Licença**
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
