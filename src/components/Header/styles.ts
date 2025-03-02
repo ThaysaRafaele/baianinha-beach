@@ -2,10 +2,10 @@ import { css } from "@emotion/react";
 import styled from "styled-components";
 
 export const headerStyles = css`
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 `;
 
 export const Logo = styled.img`
@@ -47,7 +47,7 @@ export const Title = styled.h1`
 
 export const container = css`
   background: #fcedea;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -94,7 +94,7 @@ export const menuButton = css`
 `;
 
 export const mobileMenu = (isOpen: boolean) => css`
-  display: ${isOpen ? "block" : "none"};  
+  display: ${isOpen ? "block" : "none"};
   top: 100%;
   left: 0;
   width: 100%;
@@ -114,10 +114,41 @@ export const mobileNavLink = css`
   color: white;
   text-decoration: none;
   transition: background 0.3s ease;
-  
   text-shadow: 0 0 1rem #ff1ad9, 0 0 1rem #0072b2;
 
   &:hover {
     background: #1f2523;
+  }
+`;
+
+export const cartContainer = css`
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer; 
+  margin-left: 20px; 
+`;
+
+export const cartCount = css`
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+`;
+
+export const cartLink = css`
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #1f2523;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #ff1ad9;
   }
 `;

@@ -23,3 +23,8 @@ export interface Color {
   export interface ProductCardProps {
     product: Product;
   }
+  
+  export interface CartItem extends Product {
+    quantity: number;
+  }
+  
