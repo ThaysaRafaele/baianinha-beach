@@ -8,7 +8,7 @@ export const ProductsGrid = styled.div`
   padding: 1.5rem;
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/praia2.jpg');
+  background-image: url('/praia2.jpg');
   background-size: cover;
   background-position: center;
 `;

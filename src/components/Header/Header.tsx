@@ -31,7 +31,7 @@ const Header = () => {
       <div css={styles.container}>
         <Link to="/" css={styles.logo}>
           <styles.TitleContainer>
-            <styles.Logo src="/src/assets/Baianinha-logo.png" alt="Logo Baianinha Beach" />
+            <styles.Logo src="/Baianinha-logo.png" alt="Logo Baianinha Beach" />
             <styles.Title />
           </styles.TitleContainer>
         </Link>
